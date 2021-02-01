@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Instagram</title>
+    <link rel="stylesheet" href="./styles/style.css" />
+  </head>
+  <body>
+    <div class="homepage-wrapper">
+      <div class="home-container">
+        <div class="phone-gallery">
+          <img
+            class="img-size first active"
+            src="./images/screenshot-1.jpg"
+            alt=""
+          />
+          <img class="img-size" src="./images/screenshot-2.jpg" alt="" />
+          <img class="img-size" src="./images/screenshot-3.jpg" alt="" />
+          <img class="img-size" src="./images/screenshot-4.jpg" alt="" />
+          <img class="img-size last" src="./images/screenshot-5.jpg" alt="" />
+        </div>
+      </div>
+
+      <div class="login-content">
+        <div class="login-card">
+          <img
+            class="instagram-logo"
+            src="./images/instagram-logo.png"
+            alt="logo Instagram"
+          />
+          <form action="#">
+            <input
+              type="text"
+              name="user"
+              placeholder="Telefone, nome de usuário ou email"
+            />
+            <input type="password" name="password" placeholder="Senha" />
+            <button>Entrar</button>
+            <div class="division">
+              <span class="line-division"></span>
+              <div>ou</div>
+              <span class="line-division"></span>
+            </div>
+
+            <div class="login-face">
+              <span><i class="fab fa-facebook-square"></i></span>
+              <span>Entra com o Facebook</span>
+            </div>
+            <a class="reset-password" href="#">Esqueceu a senha?</a>
+          </form>
+        </div>
+
+        <div class="create-account">
+          <p>
+            Não tem uma conta?
+            <span class="link-blue">Cadastre-se</span>
+          </p>
+        </div>
+
+        <div class="get-the-app">
+          <p class="get-app">Obtenha o aplicativo.</p>
+          <div class="download">
+            <a
+              class="app-download"
+              href="https://itunes.apple.com/app/instagram/id389801252?pt=428156&ct=igweb.loginPage.badge&mt=8&vt=lo"
+            >
+              <img src="./images/apple-button.png" alt="" />
+            </a>
+            <a
+              class="app-download"
+              href="https://play.google.com/store/apps/details?id=com.instagram.android&referrer=utm_source%3Dinstagramweb%26utm_campaign%3DloginPage%26ig_mid%3D499303AF-6E96-4C1B-944E-9FD80B7386E3%26utm_content%3Dlo%26utm_medium%3Dbadge"
+            >
+              <img src="./images/googleplay-button.png" alt="" />
+            </a>
+          </div>
+        </div>
+      </div>
+      <!-- login-content -->
+    </div>
+
+    <script src="https://kit.fontawesome.com/2c36e9b7b1.js"></script>
+    <script src="./js/script.js"></script>
+  </body>
+</html>
