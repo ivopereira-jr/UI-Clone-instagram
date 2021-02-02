@@ -2,13 +2,11 @@ let images = document.querySelectorAll(".phone-gallery .img-size")
 let fistImage = document.querySelector(".img-size.first")
 let lastImage = document.querySelector(".img-size.last")
 
-images.forEach(nextImage)
-
-function nextImage(image, index, arr) {
+for (let index = 0; index < images.length; index++) {
   let imageNext, imagePrev, clearImagePrev
 
   if (index == 0) {
-    setTimeout(function run() {
+    setTimeout(function nextImage() {
       images.forEach(image => {
         if (image.classList.contains("active")) {
           clearImagePrev = image.previousElementSibling
@@ -23,7 +21,7 @@ function nextImage(image, index, arr) {
         fistImage.classList.add("active")
         setTimeout(() => {
           lastImage.classList.remove("prev")
-        }, 4000)
+        }, 5000)
       } else {
         imageNext.classList.add("active")
       }
@@ -34,7 +32,7 @@ function nextImage(image, index, arr) {
         clearImagePrev.classList.remove("prev")
       }
 
-      setTimeout(run, 4000)
-    }, 4000)
+      setTimeout(nextImage, 5000)
+    }, 5000)
   }
 }
