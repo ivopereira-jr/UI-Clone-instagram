@@ -1,6 +1,5 @@
 <h1 align="center">
   UI Clone Home Page Instagram  
-  
 </h1>
 
 </br>
@@ -19,6 +18,8 @@ pratica de html css javascript
 
 <h2>
 Aplicação
+
+https://ivopereira-jr.github.io/UI-Clone-instagram/
 
 </h2>
 
@@ -39,7 +40,7 @@ Aplicação
 ```bash
 
 # clonar o repositório
-$ git clone https://github.com/ivopereira-jr/30-Days-Css.git
+$ git clone https://github.com/ivopereira-jr/UI-Clone-instagram.git
 
 ```
 
