@@ -1,0 +1,265 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+body {
+  min-height: 100vh;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+    Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  background-color: #fafafa;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+section.homepage {
+  margin-top: auto;
+  padding-bottom: 32px;
+}
+
+.homepage-container {
+  width: 100%;
+  height: 620px;
+  margin-top: 32px;
+  display: flex;
+  align-self: center;
+  justify-content: center;
+}
+
+.homepage-content {
+  width: 450px;
+  height: 100%;
+  display: flex;
+  justify-content: flex-end;
+  background-image: url('../images/home-phone.png');
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-size: cover;
+}
+
+.phone-gallery {
+  position: relative;
+  width: 245px;
+  height: 433px;
+  top: 4px;
+  right: 55px;
+  display: flex;
+  align-self: center;
+  border: 2px solid rgb(38, 38, 38);
+  border-radius: 2px;
+  overflow: hidden;
+}
+
+.phone-gallery img {
+  width: 240px;
+  height: 427px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0;
+  transition: opacity 1.5s ease-in;
+}
+
+.phone-gallery img.active {
+  opacity: 1;
+  z-index: 2;
+}
+
+.login-content .login-card,
+.login-content .create-account {
+  max-width: 350px;
+  padding: 10px 0;
+  margin-top: 33px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  border: 1px solid #dbdbdb;
+  border-radius: 1px;
+  background-color: #ffffff;
+}
+
+.instagram-logo {
+  width: 175px;
+  height: 51px;
+  display: block;
+  margin: 22px auto 12px;
+}
+
+.login-content form {
+  margin: 25px 40px 0;
+  padding-bottom: 10px;
+}
+
+.login-content form input[type='text'],
+.login-content form input[type='password'] {
+  width: 100%;
+  height: 36px;
+  padding: 8px 10px;
+  margin-bottom: 6px;
+  font-size: 12px;
+  border: 1px solid #dbdbdb;
+  border-radius: 1px;
+  background-color: #fafafa;
+  outline: none;
+}
+
+.login-content form button {
+  width: 100%;
+  margin: 8px 0;
+  padding: 6px 10px;
+  text-align: center;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 400;
+  color: rgb(255, 255, 255);
+  background-color: #b2dffc;
+  border: none;
+  border-radius: 4px;
+  outline: none;
+}
+
+.login-content form .division {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  margin: 10px 0 18px;
+}
+
+.login-content form span.line-division {
+  width: 100%;
+  height: 1px;
+  display: flex;
+  background-color: #dbdbdb;
+}
+
+.login-content form .division > div {
+  font-size: 13px;
+  line-height: 15px;
+  font-weight: 600px;
+  text-transform: uppercase;
+  color: rgb(142, 142, 142);
+  margin: 0 18px;
+}
+
+.login-content form .login-face {
+  margin: 8px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.login-content .login-face span > i {
+  color: #385185;
+  margin-right: 5px;
+  font-size: 16px;
+}
+
+.login-content .login-face span + span {
+  color: rgb(56, 81, 133);
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.login-content a.reset-password {
+  color: rgb(38, 38, 38);
+  font-size: 12px;
+  line-height: 14px;
+  margin-top: 12px;
+  display: block;
+  text-align: center;
+}
+
+.login-content .create-account {
+  color: rgb(38, 38, 38);
+  margin: 10px 0;
+  padding: 10px 0;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 400;
+  text-align: center;
+}
+
+.login-content .create-account p {
+  margin: 15px;
+}
+
+.create-account span.link-blue {
+  color: rgb(0, 149, 246);
+  font-weight: 600;
+}
+
+.get-the-app {
+  max-width: 350px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.get-app {
+  margin: 10px auto;
+  font-size: 14px;
+  line-height: 18px;
+  text-align: center;
+}
+
+.download {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 8px;
+  align-items: center;
+  margin: 10px auto;
+}
+
+.download a.app-download {
+  width: 136px;
+  height: 40px;
+}
+
+.download a.app-download img {
+  width: 100%;
+  height: 100%;
+}
+
+/*footer*/
+footer {
+  width: 100%;
+  margin-top: auto;
+  margin-bottom: 50px;
+}
+
+footer .links-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 25px;
+}
+
+.links-container .links-content ul {
+  list-style: none;
+  display: inline-flex;
+}
+
+.links-container .links-content ul li {
+  margin: 0 8px;
+}
+.links-container .links-content ul li a,
+.links-container .languages-copyright span {
+  color: rgb(142, 142, 142);
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 14px;
+}
+
+.links-container .languages-copyright {
+  margin: 12px 0;
+}
+
+.links-container .languages-copyright span + span {
+  margin-left: 15px;
+}
