@@ -17,9 +17,9 @@ pratica de html css javascript
 </br>
 
 <h2>
-Aplicação
+Aplicação em funcionamento
 
-https://ivopereira-jr.github.io/UI-Clone-instagram/
+https://ui-clone-instagram.vercel.app/
 
 </h2>
 
