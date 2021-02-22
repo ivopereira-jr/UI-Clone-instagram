@@ -19,7 +19,7 @@ pratica de html css javascript
 <h2>
 Aplicação em funcionamento
 
-https://ui-clone-instagram.vercel.app/
+https://ui-clone-instagram-ivopereira-jr.vercel.app/
 
 </h2>
 
