@@ -1,0 +1,352 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+html,
+body {
+  height: 100vh;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+    Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  background-color: #fafafa;
+}
+
+.container {
+  max-width: 940px;
+  margin: 0 auto;
+}
+
+ul {
+  list-style: none;
+}
+
+main .container {
+  width: 100%;
+  height: 95vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+article.homepage {
+  padding: 32px 0;
+}
+
+.homepage-container {
+  width: 100%;
+  height: 620px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 5vh;
+}
+
+.homepage-phone {
+  width: 450px;
+  height: 100%;
+  position: relative;
+}
+
+.homepage-phone img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.phone-gallery {
+  position: absolute;
+  top: 98px;
+  right: 58px;
+  width: 245px;
+  height: 433px;
+  border: 2px solid rgb(38, 38, 38);
+  border-radius: 2px;
+}
+
+.phone-gallery img {
+  width: 240px;
+  height: 427px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0;
+  transition: opacity 1.5s ease-in;
+}
+
+.phone-gallery img.active {
+  opacity: 1;
+  z-index: 2;
+}
+
+.login-contents {
+  max-width: 350px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+  left: -10px;
+}
+
+.login-contents .login-card,
+.login-contents .create-account {
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 10px 0;
+  border: 1px solid #dbdbdb;
+  border-radius: 1px;
+  background-color: #ffffff;
+}
+
+.login-card .logo {
+  width: 175px;
+  height: 51px;
+  margin: 22px auto 12px;
+}
+
+.login-card .logo img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  margin: 0 auto;
+}
+
+.login-contents .login-form {
+  padding: 4px 0;
+}
+
+.login-contents .login-form form {
+  padding-top: 24px;
+  margin-bottom: 10px;
+}
+
+.login-contents .login-form form .login {
+  margin: 0 40px;
+}
+
+.login-contents .login-form form input[type='text'],
+.login-contents .login-form form input[type='password'] {
+  width: 100%;
+  height: 38px;
+  padding: 8px 10px;
+  margin-bottom: 6px;
+  font-size: 12px;
+  border: 1px solid #dbdbdb;
+  border-radius: 1px;
+  background-color: #fafafa;
+  outline: none;
+}
+
+.login-contents .login-form form button {
+  width: 100%;
+  margin: 8px 0;
+  padding: 6px 10px;
+  text-align: center;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 400;
+  color: rgb(255, 255, 255);
+  background-color: #b2dffc;
+  border: none;
+  border-radius: 4px;
+  outline: none;
+}
+
+.login-contents .login-form form .division {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  margin: 10px 0 18px;
+}
+
+.login-contents .login-form form span.line-division {
+  width: 100%;
+  height: 1px;
+  display: flex;
+  background-color: #dbdbdb;
+}
+
+.login-contents .login-form form .division > div {
+  font-size: 13px;
+  line-height: 15px;
+  font-weight: 600px;
+  text-transform: uppercase;
+  color: rgb(142, 142, 142);
+  margin: 0 18px;
+}
+
+.login-contents .login-form form .login-face {
+  margin: 8px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.login-contents .login-face span > i {
+  color: #385185;
+  margin-right: 8px;
+  font-size: 18px;
+  position: relative;
+  bottom: 1px;
+}
+
+.login-contents .login-face span + span {
+  color: rgb(56, 81, 133);
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.login-contents a.reset-password {
+  color: rgb(38, 38, 38);
+  font-size: 12px;
+  line-height: 14px;
+  margin-top: 12px;
+  display: block;
+  text-align: center;
+}
+
+.login-contents .create-account {
+  color: rgb(38, 38, 38);
+  padding: 6px 0;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 400;
+  text-align: center;
+}
+
+.login-contents .create-account p {
+  margin: 15px;
+}
+
+.create-account span.link-blue {
+  color: rgb(0, 149, 246);
+  font-weight: 600;
+}
+
+.get-the-app {
+  max-width: 350px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.get-app {
+  margin: 10px auto;
+  font-size: 14px;
+  line-height: 18px;
+  text-align: center;
+}
+
+.download {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 8px;
+  align-items: center;
+  margin: 10px auto;
+}
+
+.download a.app-download {
+  width: 136px;
+  height: 40px;
+}
+
+.download a.app-download img {
+  width: 100%;
+  height: 100%;
+}
+
+/*footer*/
+footer {
+  width: 100%;
+  padding: 0 16px;
+}
+
+footer .links-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 25px;
+}
+
+.links-contents {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.links-container .links-contents div {
+  margin: 0 8px;
+}
+
+.links-container .links-contents div a,
+.links-container .languages-copyright span {
+  color: rgb(142, 142, 142);
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 14px;
+}
+
+.links-container .languages-copyright {
+  margin: 12px 0;
+}
+
+.links-container .languages-copyright span + span {
+  margin-left: 15px;
+}
+
+@media (max-width: 860px) {
+  .homepage-phone {
+    display: none;
+  }
+
+  .login-contents {
+    width: 90%;
+    left: 0;
+  }
+
+  .login-contents a.reset-password {
+    margin-top: 18px;
+  }
+}
+
+@media (min-width: 375px) and (max-width: 450px) {
+  article.homepage {
+    margin: 0;
+    padding: 0;
+  }
+
+  .homepage-container {
+    height: 75vh;
+    margin-top: 2vh;
+  }
+
+  .login-contents .login-card,
+  .login-contents .create-account {
+    border: none;
+    background-color: #fafafa;
+  }
+
+  .login-contents .login-form form .login {
+    margin: 0 auto;
+  }
+
+  .links-container .languages-copyright span + span {
+    margin-left: 10px;
+  }
+}
+
+@media (max-width: 370px) {
+  .homepage-container {
+    height: 95vh;
+  }
+}
